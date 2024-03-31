@@ -56,7 +56,7 @@ module tb_ShiftReg();
 
         #8
         tb_nreset = 0;
-        $finish;
+        $stop;
     end
 
     always #8 tb_clk = ~tb_clk;

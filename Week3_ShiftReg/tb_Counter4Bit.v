@@ -16,23 +16,19 @@ module tb_Counter4Bit();
         tb_nreset = 0;
         tb_clk = 1;
 
-        #10
+        #5
         tb_clk = 0;
         tb_nreset = 1;
 
-        for (integer i = 0; i < 24; i = i + 1) begin
-            #10;
-            tb_clk = ~tb_clk;
-        end
-
-        #10
+        #320
         tb_nreset = 0;
         tb_clk = 0;
 
         #10
-        tb_clk = 0;
+        $stop;
 
     end
+    always #8 tb_clk = ~tb_clk;
 
 endmodule
 

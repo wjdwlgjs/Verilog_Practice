@@ -71,9 +71,9 @@ module  tb_DFF();
         tb_d = 1'b0;
 
         #10
-        $finish;
+        $stop;
         
-end 
-     always #8 tb_clk = ~tb_clk;
+    end 
+    always #8 tb_clk = ~tb_clk;
     
 endmodule

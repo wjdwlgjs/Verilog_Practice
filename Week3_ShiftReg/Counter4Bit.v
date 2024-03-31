@@ -1,7 +1,7 @@
 module Counter4Bit(
     input pulse_i,
     input count_nreset_i,
-    output [3:0] count_o,
+    output [3:0] count_o
     );
 
     CustomDFF firstBit(
