@@ -22,4 +22,4 @@ module AlteraClock(
     output [6:0] decahr_7seg_o
     );
 
-    
+endmodule

@@ -53,7 +53,7 @@ module PulseGeneratorSmall(
 
     genvar i;
     generate
-        for (i = 0; i < 8; i = i + 1) begin: JKFFArrayForPulse
+        for (i = 0; i < 8; i = i + 1) begin: JKFFArrayForPulseSmall
             assign toggle[i] = (i == 0? 1'b1: toggle[i-1] & count[i-1]);
             FFJK JKFFInstForPulse(
                 .j_i(~limit_reached & toggle[i]),

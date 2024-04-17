@@ -21,4 +21,4 @@ module CombinedModule( // button input manager + clock + stopwatch + timer + out
     output [6:0] decahr_7seg_o
     );
 
-    
+endmodule
