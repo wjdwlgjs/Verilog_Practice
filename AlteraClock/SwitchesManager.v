@@ -24,6 +24,46 @@ module ButtonInterpreter(
 
 endmodule
 
+module digitdemux(
+    input wire [3:0] a,
+    input [1:0] sel,
+    output reg [3:0] out_0,
+    output reg [3:0] out_1,
+    output reg [3:0] out_2,
+    output reg [3:0] out_3
+    );
+
+    always @(*) begin
+        case(sel) 
+            2'b00: begin // clock
+                out_0 = a;
+                out_1 = 0;
+                out_2 = 0;
+                out_3 = 0;
+            end
+            2'b01: begin // stopwatch
+                out_0 = 0;
+                out_1 = a;
+                out_2 = 0;
+                out_3 = 0;
+            end
+            2'b10: begin // timer
+                out_0 = 0;
+                out_1 = 0;
+                out_2 = a;
+                out_3 = 0;
+            end
+            2'b11: begin // time setting?
+                out_0 = 0;
+                out_1 = 0; 
+                out_2 = 0;
+                out_3 = a;
+            end
+        endcase
+    end
+endmodule
+
+
 module SwitchesManager(
     input key1_i,
     input key2_i,
@@ -76,12 +116,26 @@ module SwitchesManager(
         .pressed_o(temp_outputs[3])
     );
 
-    assign {clock_setmode_o, clock_down_o, clock_up_o, clock_set_run_switch_o} = {4{clockmode_i}} & temp_outputs;
+    // assign {clock_setmode_o, clock_down_o, clock_up_o, clock_set_run_switch_o} = {4{clockmode_i}} & temp_outputs;
     //      key3             key2          key1,       switch
-    assign {stopwatch_runpause_o, stopwatch_reset_o} = {2{stopwatchmode_i}} & temp_outputs[3:2];
+    // assign {stopwatch_runpause_o, stopwatch_reset_o} = {2{stopwatchmode_i}} & temp_outputs[3:2];
     //      key3                  key2
-    assign {timer_setmode_runpause_o, timer_down_reset_o, timer_up_o, timer_set_runorpause_switch_o} = {4{timermode_i}} & temp_outputs;
+    // assign {timer_setmode_runpause_o, timer_down_reset_o, timer_up_o, timer_set_runorpause_switch_o} = {4{timermode_i}} & temp_outputs;
     //      key3                      key2                key1        switch
 
+    wire [3:0] clock_signal, stopwatch_signal, timer_signal;
+    
+    digitdemux DigitDemux(
+        .a(temp_outputs),
+        .sel({timermode_i & ~clockmode_i, stopwatchmode_i & ~clockmode_i}),
+        .out_0(clock_signal),
+        .out_1(stopwatch_signal),
+        .out_2(timer_signal),
+        .out_3()
+    );
+
+    assign {clock_setmode_o, clock_down_o, clock_up_o, clock_set_run_switch_o} = clock_signal;
+    assign {stopwatch_runpause_o, stopwatch_reset_o} = stopwatch_signal[3:2];
+    assign {timer_setmode_runpause_o, timer_down_reset_o, timer_up_o, timer_set_runorpause_switch_o} = timer_signal;
 
 endmodule

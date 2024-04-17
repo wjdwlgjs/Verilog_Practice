@@ -59,7 +59,8 @@ module TimerController(
 
                 run_state: begin
                     if (set_runorpause_switch_i) control_state <= set_sec_state; // switch == 1, others: x
-                    else if (down_reset_i | everything_iszero_i) control_state <= initial_state; // switch == 0, down_reset or everything_iszero == 1, others: x
+                    else if (down_reset_i) control_state <= initial_state; // switch == 0, down_reset == 1, others: x
+                    else if (everything_iszero_i) control_state <= end_state; // switch == 0, down_reset == 0, everything_iszero == 1, others: x
                     else if (setmode_runpause_i) control_state <= pause_state; // switch == 0, everything_iszero == 0, down_reset == 0, setmode_runpause == 1, others: x
                     else control_state <= run_state; // switch == 0, everything_iszero ==0, down_reset == 0, setmode_runpause == 0, others: x;
                 end
@@ -156,7 +157,7 @@ module TimerModule(
         .setmode_runpause_i(setmode_runpause_i),
         
         // timer innner control signals
-        .everything_iszero_i(everything_iszero_i),
+        .everything_iszero_i(everything_iszero),
 
         // clk and asynch (master) reset
         .clk_i(clk_i),
@@ -177,7 +178,7 @@ module TimerModule(
     wire lessthansec_borrow;
     DualBCDCounter LessThanSecCounter(
         .dd_up_i(1'b0),
-        .dd_down_i(run),
+        .dd_down_i(run & ~everything_iszero),
         .dd_clk_i(clk_i),
         .dd_nreset_i(counters_nreset & notset_any),
         .tens_limit_i(4'b1001),
