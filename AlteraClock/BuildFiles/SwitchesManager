@@ -1,0 +1,293 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000262e289d090 .scope module, "SwitchesManager" "SwitchesManager" 2 27;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "key1_i";
+    .port_info 1 /INPUT 1 "key2_i";
+    .port_info 2 /INPUT 1 "key3_i";
+    .port_info 3 /INPUT 1 "set_switch_i";
+    .port_info 4 /INPUT 1 "clockmode_i";
+    .port_info 5 /INPUT 1 "stopwatchmode_i";
+    .port_info 6 /INPUT 1 "timermode_i";
+    .port_info 7 /INPUT 1 "clk_i";
+    .port_info 8 /INPUT 1 "nreset_i";
+    .port_info 9 /OUTPUT 1 "clock_set_run_switch_o";
+    .port_info 10 /OUTPUT 1 "clock_up_o";
+    .port_info 11 /OUTPUT 1 "clock_down_o";
+    .port_info 12 /OUTPUT 1 "clock_setmode_o";
+    .port_info 13 /OUTPUT 1 "stopwatch_reset_o";
+    .port_info 14 /OUTPUT 1 "stopwatch_runpause_o";
+    .port_info 15 /OUTPUT 1 "timer_set_runorpause_switch_o";
+    .port_info 16 /OUTPUT 1 "timer_up_o";
+    .port_info 17 /OUTPUT 1 "timer_down_reset_o";
+    .port_info 18 /OUTPUT 1 "timer_setmode_runpause_o";
+o00000262e27cb6f8 .functor BUFZ 1, C4<z>; HiZ drive
+L_00000262e27bf970 .functor BUFZ 1, o00000262e27cb6f8, C4<0>, C4<0>, C4<0>;
+L_00000262e27bff20 .functor AND 4, L_00000262e27ba530, L_00000262e2819390, C4<1111>, C4<1111>;
+L_00000262e27bfc80 .functor AND 2, L_00000262e286bcd0, L_00000262e286baf0, C4<11>, C4<11>;
+L_00000262e27bfe40 .functor AND 4, L_00000262e286a6f0, L_00000262e2819390, C4<1111>, C4<1111>;
+v00000262e2819cf0_0 .net *"_ivl_16", 3 0, L_00000262e27ba530;  1 drivers
+v00000262e2818df0_0 .net *"_ivl_18", 3 0, L_00000262e27bff20;  1 drivers
+v00000262e2818490_0 .net *"_ivl_23", 1 0, L_00000262e286bcd0;  1 drivers
+v00000262e2818f30_0 .net *"_ivl_26", 1 0, L_00000262e286baf0;  1 drivers
+v00000262e281a150_0 .net *"_ivl_27", 1 0, L_00000262e27bfc80;  1 drivers
+v00000262e28194d0_0 .net *"_ivl_3", 0 0, L_00000262e27bf970;  1 drivers
+v00000262e28192f0_0 .net *"_ivl_34", 3 0, L_00000262e286a6f0;  1 drivers
+v00000262e2819a70_0 .net *"_ivl_36", 3 0, L_00000262e27bfe40;  1 drivers
+o00000262e27cb008 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e2819070_0 .net "clk_i", 0 0, o00000262e27cb008;  0 drivers
+v00000262e2818b70_0 .net "clock_down_o", 0 0, L_00000262e2819930;  1 drivers
+v00000262e2819570_0 .net "clock_set_run_switch_o", 0 0, L_00000262e28197f0;  1 drivers
+v00000262e2818ad0_0 .net "clock_setmode_o", 0 0, L_00000262e2819430;  1 drivers
+v00000262e2818c10_0 .net "clock_up_o", 0 0, L_00000262e2819750;  1 drivers
+o00000262e27cb6c8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e2819ed0_0 .net "clockmode_i", 0 0, o00000262e27cb6c8;  0 drivers
+o00000262e27cafd8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e28185d0_0 .net "key1_i", 0 0, o00000262e27cafd8;  0 drivers
+o00000262e27cb1b8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e281a1f0_0 .net "key2_i", 0 0, o00000262e27cb1b8;  0 drivers
+o00000262e27cb338 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e2818e90_0 .net "key3_i", 0 0, o00000262e27cb338;  0 drivers
+o00000262e27cb038 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e281a0b0_0 .net "nreset_i", 0 0, o00000262e27cb038;  0 drivers
+v00000262e2818710_0 .net "set_switch_i", 0 0, o00000262e27cb6f8;  0 drivers
+v00000262e2818fd0_0 .net "stopwatch_reset_o", 0 0, L_00000262e286add0;  1 drivers
+v00000262e2819890_0 .net "stopwatch_runpause_o", 0 0, L_00000262e286b2d0;  1 drivers
+o00000262e27cb788 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e28196b0_0 .net "stopwatchmode_i", 0 0, o00000262e27cb788;  0 drivers
+v00000262e2818cb0_0 .net "temp_outputs", 3 0, L_00000262e2819390;  1 drivers
+v00000262e2819c50_0 .net "timer_down_reset_o", 0 0, L_00000262e286b690;  1 drivers
+v00000262e2819f70_0 .net "timer_set_runorpause_switch_o", 0 0, L_00000262e286b870;  1 drivers
+v00000262e28187b0_0 .net "timer_setmode_runpause_o", 0 0, L_00000262e286b910;  1 drivers
+v00000262e2818850_0 .net "timer_up_o", 0 0, L_00000262e286ae70;  1 drivers
+o00000262e27cb8a8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000262e281a290_0 .net "timermode_i", 0 0, o00000262e27cb8a8;  0 drivers
+L_00000262e2819390 .concat8 [ 1 1 1 1], L_00000262e27bf970, L_00000262e281a330, L_00000262e2818d50, L_00000262e28191b0;
+L_00000262e2819430 .part L_00000262e27bff20, 3, 1;
+L_00000262e2819930 .part L_00000262e27bff20, 2, 1;
+L_00000262e2819750 .part L_00000262e27bff20, 1, 1;
+L_00000262e28197f0 .part L_00000262e27bff20, 0, 1;
+L_00000262e27ba530 .concat [ 1 1 1 1], o00000262e27cb6c8, o00000262e27cb6c8, o00000262e27cb6c8, o00000262e27cb6c8;
+L_00000262e286b2d0 .part L_00000262e27bfc80, 1, 1;
+L_00000262e286add0 .part L_00000262e27bfc80, 0, 1;
+L_00000262e286bcd0 .concat [ 1 1 0 0], o00000262e27cb788, o00000262e27cb788;
+L_00000262e286baf0 .part L_00000262e2819390, 2, 2;
+L_00000262e286b910 .part L_00000262e27bfe40, 3, 1;
+L_00000262e286b690 .part L_00000262e27bfe40, 2, 1;
+L_00000262e286ae70 .part L_00000262e27bfe40, 1, 1;
+L_00000262e286b870 .part L_00000262e27bfe40, 0, 1;
+L_00000262e286a6f0 .concat [ 1 1 1 1], o00000262e27cb8a8, o00000262e27cb8a8, o00000262e27cb8a8, o00000262e27cb8a8;
+S_00000262e2792720 .scope module, "Key1Interpreter" "ButtonInterpreter" 2 58, 2 1 0, S_00000262e289d090;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "button_i";
+    .port_info 1 /INPUT 1 "clk_i";
+    .port_info 2 /INPUT 1 "nreset_i";
+    .port_info 3 /OUTPUT 1 "pressed_o";
+L_00000262e28225f8 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v00000262e27ba0d0_0 .net/2u *"_ivl_0", 1 0, L_00000262e28225f8;  1 drivers
+v00000262e27b9d10_0 .net "button_i", 0 0, o00000262e27cafd8;  alias, 0 drivers
+v00000262e27ba170_0 .net "clk_i", 0 0, o00000262e27cb008;  alias, 0 drivers
+v00000262e27ba5d0_0 .net "nreset_i", 0 0, o00000262e27cb038;  alias, 0 drivers
+v00000262e27b98b0_0 .net "pressed_o", 0 0, L_00000262e281a330;  1 drivers
+v00000262e2819610_0 .var "state", 1 0;
+E_00000262e27bdcd0 .event negedge, v00000262e27ba5d0_0, v00000262e27ba170_0;
+L_00000262e281a330 .cmp/eq 2, v00000262e2819610_0, L_00000262e28225f8;
+S_00000262e27928b0 .scope module, "Key2Interpreter" "ButtonInterpreter" 2 65, 2 1 0, S_00000262e289d090;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "button_i";
+    .port_info 1 /INPUT 1 "clk_i";
+    .port_info 2 /INPUT 1 "nreset_i";
+    .port_info 3 /OUTPUT 1 "pressed_o";
+L_00000262e2822640 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v00000262e2819b10_0 .net/2u *"_ivl_0", 1 0, L_00000262e2822640;  1 drivers
+v00000262e2819110_0 .net "button_i", 0 0, o00000262e27cb1b8;  alias, 0 drivers
+v00000262e2819d90_0 .net "clk_i", 0 0, o00000262e27cb008;  alias, 0 drivers
+v00000262e28188f0_0 .net "nreset_i", 0 0, o00000262e27cb038;  alias, 0 drivers
+v00000262e2818990_0 .net "pressed_o", 0 0, L_00000262e2818d50;  1 drivers
+v00000262e2818a30_0 .var "state", 1 0;
+L_00000262e2818d50 .cmp/eq 2, v00000262e2818a30_0, L_00000262e2822640;
+S_00000262e281a450 .scope module, "Key3Interpreter" "ButtonInterpreter" 2 72, 2 1 0, S_00000262e289d090;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "button_i";
+    .port_info 1 /INPUT 1 "clk_i";
+    .port_info 2 /INPUT 1 "nreset_i";
+    .port_info 3 /OUTPUT 1 "pressed_o";
+L_00000262e2822688 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v00000262e281a010_0 .net/2u *"_ivl_0", 1 0, L_00000262e2822688;  1 drivers
+v00000262e2819bb0_0 .net "button_i", 0 0, o00000262e27cb338;  alias, 0 drivers
+v00000262e2819e30_0 .net "clk_i", 0 0, o00000262e27cb008;  alias, 0 drivers
+v00000262e2818530_0 .net "nreset_i", 0 0, o00000262e27cb038;  alias, 0 drivers
+v00000262e2818670_0 .net "pressed_o", 0 0, L_00000262e28191b0;  1 drivers
+v00000262e28199d0_0 .var "state", 1 0;
+L_00000262e28191b0 .cmp/eq 2, v00000262e28199d0_0, L_00000262e2822688;
+    .scope S_00000262e2792720;
+T_0 ;
+    %wait E_00000262e27bdcd0;
+    %load/vec4 v00000262e27ba5d0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e2819610_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v00000262e27b9d10_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v00000262e2819610_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.4, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.5, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.6, 6;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e2819610_0, 0;
+    %jmp T_0.8;
+T_0.4 ;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v00000262e2819610_0, 0;
+    %jmp T_0.8;
+T_0.5 ;
+    %pushi/vec4 2, 0, 2;
+    %assign/vec4 v00000262e2819610_0, 0;
+    %jmp T_0.8;
+T_0.6 ;
+    %pushi/vec4 2, 0, 2;
+    %assign/vec4 v00000262e2819610_0, 0;
+    %jmp T_0.8;
+T_0.8 ;
+    %pop/vec4 1;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e2819610_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00000262e27928b0;
+T_1 ;
+    %wait E_00000262e27bdcd0;
+    %load/vec4 v00000262e28188f0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e2818a30_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v00000262e2819110_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.2, 8;
+    %load/vec4 v00000262e2818a30_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.4, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.5, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.6, 6;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e2818a30_0, 0;
+    %jmp T_1.8;
+T_1.4 ;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v00000262e2818a30_0, 0;
+    %jmp T_1.8;
+T_1.5 ;
+    %pushi/vec4 2, 0, 2;
+    %assign/vec4 v00000262e2818a30_0, 0;
+    %jmp T_1.8;
+T_1.6 ;
+    %pushi/vec4 2, 0, 2;
+    %assign/vec4 v00000262e2818a30_0, 0;
+    %jmp T_1.8;
+T_1.8 ;
+    %pop/vec4 1;
+    %jmp T_1.3;
+T_1.2 ;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e2818a30_0, 0;
+T_1.3 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_00000262e281a450;
+T_2 ;
+    %wait E_00000262e27bdcd0;
+    %load/vec4 v00000262e2818530_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.0, 8;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e28199d0_0, 0;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/vec4 v00000262e2819bb0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.2, 8;
+    %load/vec4 v00000262e28199d0_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_2.4, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 2;
+    %cmp/u;
+    %jmp/1 T_2.5, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 2;
+    %cmp/u;
+    %jmp/1 T_2.6, 6;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e28199d0_0, 0;
+    %jmp T_2.8;
+T_2.4 ;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v00000262e28199d0_0, 0;
+    %jmp T_2.8;
+T_2.5 ;
+    %pushi/vec4 2, 0, 2;
+    %assign/vec4 v00000262e28199d0_0, 0;
+    %jmp T_2.8;
+T_2.6 ;
+    %pushi/vec4 2, 0, 2;
+    %assign/vec4 v00000262e28199d0_0, 0;
+    %jmp T_2.8;
+T_2.8 ;
+    %pop/vec4 1;
+    %jmp T_2.3;
+T_2.2 ;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v00000262e28199d0_0, 0;
+T_2.3 ;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "AlteraClock\SwitchesManager.v";
