@@ -26,12 +26,15 @@ module digitdiplmux(
     input [31:0] clock_values,
     input [31:0] stopwatch_values,
     input [31:0] timer_values,
-    input [1:0] sel,
+    input clockmode, 
+    input stopwatchmode, 
+    input timermode,
 
     output reg [55:0] segment_out
     );
 
-    reg [31:0] selected_values;
+    // reg [31:0] selected_values;
+    wire [31:0] selected_values;
     wire [6:0] seg0, seg1, seg2, seg3, seg4, seg5, seg6, seg7;
     reg [3:0] num0, num1, num2, num3, num4, num5, num6, num7;
 
@@ -46,7 +49,7 @@ module digitdiplmux(
         num7 = selected_values[31:28];
     end
 
-    always @(posedge clk or negedge rstn) begin
+    /* always @(posedge clk or negedge rstn) begin
         if (!rstn) begin
             selected_values <= 32'b0;
         end
@@ -58,7 +61,9 @@ module digitdiplmux(
                 default: selected_values <= clock_values;
             endcase
         end
-    end
+    end */
+
+    assign selected_values = {32{clockmode}} & clock_values | {32{stopwatchmode}} & stopwatch_values | {32{timermode}} & timer_values;
 
     always @(*) begin
         segment_out = {seg0, seg1, seg2, seg3, seg4, seg5, seg6, seg7};

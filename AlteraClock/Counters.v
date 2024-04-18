@@ -1,4 +1,4 @@
-`include "AlteraClock/FFJK.v"
+// `include "AlteraClock/FFJK.v"
 
 /* module Counter4Bit(
     input up_i,

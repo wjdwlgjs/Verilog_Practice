@@ -1,4 +1,4 @@
-`include "AlteraClock/Counters.v" // includes ffjk too
+// `include "AlteraClock/Counters.v" // includes ffjk too
 
 module StopWatchModule(
     // button inputs

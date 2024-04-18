@@ -1,0 +1,133 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 15:29:00  April 18, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		AlteraClock_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY AlteraClock
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:29:00  APRIL 18, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name VERILOG_FILE TimerModule.v
+set_global_assignment -name VERILOG_FILE ThreePhaseModeSelector.v
+set_global_assignment -name VERILOG_FILE SwitchesManager.v
+set_global_assignment -name VERILOG_FILE StopWatchModule.v
+set_global_assignment -name VERILOG_FILE PulseGenerator.v
+set_global_assignment -name VERILOG_FILE OutputManager.v
+set_global_assignment -name VERILOG_FILE FFJK.v
+set_global_assignment -name VERILOG_FILE FFD.v
+set_global_assignment -name VERILOG_FILE Counters.v
+set_global_assignment -name VERILOG_FILE CombinedModule.v
+set_global_assignment -name VERILOG_FILE ClockModule.v
+set_global_assignment -name VERILOG_FILE AlteraClock.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_V13 -to centisec_7seg_o[6]
+set_location_assignment PIN_V14 -to centisec_7seg_o[5]
+set_location_assignment PIN_AE11 -to centisec_7seg_o[4]
+set_location_assignment PIN_AD11 -to centisec_7seg_o[3]
+set_location_assignment PIN_AC12 -to centisec_7seg_o[2]
+set_location_assignment PIN_AB12 -to centisec_7seg_o[1]
+set_location_assignment PIN_AF10 -to centisec_7seg_o[0]
+set_location_assignment PIN_N9 -to decahr_7seg_o[6]
+set_location_assignment PIN_P9 -to decahr_7seg_o[5]
+set_location_assignment PIN_L7 -to decahr_7seg_o[4]
+set_location_assignment PIN_L6 -to decahr_7seg_o[3]
+set_location_assignment PIN_L9 -to decahr_7seg_o[2]
+set_location_assignment PIN_L2 -to decahr_7seg_o[1]
+set_location_assignment PIN_L3 -to decahr_7seg_o[0]
+set_location_assignment PIN_R3 -to decamin_7seg_o[6]
+set_location_assignment PIN_R4 -to decamin_7seg_o[5]
+set_location_assignment PIN_R5 -to decamin_7seg_o[4]
+set_location_assignment PIN_T9 -to decamin_7seg_o[3]
+set_location_assignment PIN_P7 -to decamin_7seg_o[2]
+set_location_assignment PIN_P6 -to decamin_7seg_o[1]
+set_location_assignment PIN_T2 -to decamin_7seg_o[0]
+set_location_assignment PIN_W24 -to decasec_7seg_o[6]
+set_location_assignment PIN_U22 -to decasec_7seg_o[5]
+set_location_assignment PIN_Y25 -to decasec_7seg_o[4]
+set_location_assignment PIN_Y26 -to decasec_7seg_o[3]
+set_location_assignment PIN_AA26 -to decasec_7seg_o[2]
+set_location_assignment PIN_AA25 -to decasec_7seg_o[1]
+set_location_assignment PIN_Y23 -to decasec_7seg_o[0]
+set_location_assignment PIN_AB24 -to decisec_7seg_o[6]
+set_location_assignment PIN_AA23 -to decisec_7seg_o[5]
+set_location_assignment PIN_AA24 -to decisec_7seg_o[4]
+set_location_assignment PIN_Y22 -to decisec_7seg_o[3]
+set_location_assignment PIN_W21 -to decisec_7seg_o[2]
+set_location_assignment PIN_V21 -to decisec_7seg_o[1]
+set_location_assignment PIN_V20 -to decisec_7seg_o[0]
+set_location_assignment PIN_M4 -to hr_7seg_o[6]
+set_location_assignment PIN_M5 -to hr_7seg_o[5]
+set_location_assignment PIN_M3 -to hr_7seg_o[4]
+set_location_assignment PIN_M2 -to hr_7seg_o[3]
+set_location_assignment PIN_P3 -to hr_7seg_o[2]
+set_location_assignment PIN_P4 -to hr_7seg_o[1]
+set_location_assignment PIN_R2 -to hr_7seg_o[0]
+set_location_assignment PIN_T3 -to min_7seg_o[6]
+set_location_assignment PIN_R6 -to min_7seg_o[5]
+set_location_assignment PIN_R7 -to min_7seg_o[4]
+set_location_assignment PIN_T4 -to min_7seg_o[3]
+set_location_assignment PIN_U2 -to min_7seg_o[2]
+set_location_assignment PIN_U1 -to min_7seg_o[1]
+set_location_assignment PIN_U9 -to min_7seg_o[0]
+set_location_assignment PIN_Y24 -to sec_7seg_o[6]
+set_location_assignment PIN_AB25 -to sec_7seg_o[5]
+set_location_assignment PIN_AB26 -to sec_7seg_o[4]
+set_location_assignment PIN_AC26 -to sec_7seg_o[3]
+set_location_assignment PIN_AC25 -to sec_7seg_o[2]
+set_location_assignment PIN_V22 -to sec_7seg_o[1]
+set_location_assignment PIN_AB23 -to sec_7seg_o[0]
+set_location_assignment PIN_N2 -to clk_50mhz_i
+set_location_assignment PIN_G26 -to key0_i
+set_location_assignment PIN_N23 -to key1_i
+set_location_assignment PIN_P23 -to key2_i
+set_location_assignment PIN_W26 -to key3_i
+set_location_assignment PIN_V2 -to master_nreset_switch_i
+set_location_assignment PIN_V1 -to disp_on_switch_i
+set_location_assignment PIN_N25 -to set_switch_i
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

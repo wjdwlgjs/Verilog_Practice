@@ -1,5 +1,5 @@
-`include "AlteraClock/ThreePhaseModeSelector.v"
-`include "AlteraClock/tb_Counters.v"
+// `include "AlteraClock/ThreePhaseModeSelector.v"
+// `include "AlteraClock/tb_Counters.v"
 
 module ClockModule(
     // button inputs

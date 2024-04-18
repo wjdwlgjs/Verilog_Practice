@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'PulseGenerator:ClkGen|pulse_o'
+Slack : -6.536
+TNS   : -436.904
+
+Type  : Slow Model Setup 'clk_50mhz_i'
+Slack : -4.549
+TNS   : -107.819
+
+Type  : Slow Model Setup 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Setup 'PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse|q_o'
+Slack : 4.526
+TNS   : 0.000
+
+Type  : Slow Model Hold 'PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse|q_o'
+Slack : -4.256
+TNS   : -4.256
+
+Type  : Slow Model Hold 'PulseGenerator:ClkGen|pulse_o'
+Slack : -2.978
+TNS   : -4.292
+
+Type  : Slow Model Hold 'clk_50mhz_i'
+Slack : -2.273
+TNS   : -9.973
+
+Type  : Slow Model Hold 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'PulseGenerator:ClkGen|pulse_o'
+Slack : -4.101
+TNS   : -156.673
+
+Type  : Slow Model Recovery 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : -3.271
+TNS   : -3.271
+
+Type  : Slow Model Removal 'PulseGenerator:ClkGen|pulse_o'
+Slack : 1.456
+TNS   : 0.000
+
+Type  : Slow Model Removal 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : 2.957
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk_50mhz_i'
+Slack : -1.380
+TNS   : -33.380
+
+Type  : Slow Model Minimum Pulse Width 'PulseGenerator:ClkGen|pulse_o'
+Slack : -0.500
+TNS   : -124.000
+
+Type  : Slow Model Minimum Pulse Width 'PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse|q_o'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Setup 'PulseGenerator:ClkGen|pulse_o'
+Slack : -2.305
+TNS   : -137.725
+
+Type  : Fast Model Setup 'clk_50mhz_i'
+Slack : -1.410
+TNS   : -30.339
+
+Type  : Fast Model Setup 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Setup 'PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse|q_o'
+Slack : 2.444
+TNS   : 0.000
+
+Type  : Fast Model Hold 'PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse|q_o'
+Slack : -2.064
+TNS   : -2.064
+
+Type  : Fast Model Hold 'PulseGenerator:ClkGen|pulse_o'
+Slack : -1.771
+TNS   : -3.113
+
+Type  : Fast Model Hold 'clk_50mhz_i'
+Slack : -1.221
+TNS   : -7.252
+
+Type  : Fast Model Hold 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'PulseGenerator:ClkGen|pulse_o'
+Slack : -1.753
+TNS   : -40.615
+
+Type  : Fast Model Recovery 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : -1.379
+TNS   : -1.379
+
+Type  : Fast Model Removal 'PulseGenerator:ClkGen|pulse_o'
+Slack : 0.764
+TNS   : 0.000
+
+Type  : Fast Model Removal 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : 1.763
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_50mhz_i'
+Slack : -1.380
+TNS   : -33.380
+
+Type  : Fast Model Minimum Pulse Width 'PulseGenerator:ClkGen|pulse_o'
+Slack : -0.500
+TNS   : -124.000
+
+Type  : Fast Model Minimum Pulse Width 'PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse|q_o'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse|q_o'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------

@@ -1,4 +1,4 @@
-`include "AlteraClock/Counters.v"
+// `include "AlteraClock/Counters.v"
 
 module TimerController(
     // button and switch inputs

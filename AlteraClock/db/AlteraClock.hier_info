@@ -1,0 +1,4169 @@
+|AlteraClock
+key0_i => key0_i.IN1
+key1_i => key1_i.IN1
+key2_i => key2_i.IN1
+key3_i => key3_i.IN1
+set_switch_i => set_switch_i.IN1
+master_nreset_switch_i => master_nreset_switch_i.IN2
+disp_on_switch_i => disp_on_switch_i.IN1
+clk_50mhz_i => clk_50mhz_i.IN1
+centisec_7seg_o[0] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_7seg_o[1] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_7seg_o[2] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_7seg_o[3] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_7seg_o[4] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_7seg_o[5] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_7seg_o[6] <= centisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[0] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[1] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[2] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[3] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[4] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[5] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decisec_7seg_o[6] <= decisec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[0] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[1] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[2] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[3] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[4] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[5] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+sec_7seg_o[6] <= sec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[0] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[1] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[2] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[3] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[4] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[5] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decasec_7seg_o[6] <= decasec_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[0] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[1] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[2] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[3] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[4] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[5] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+min_7seg_o[6] <= min_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[0] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[1] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[2] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[3] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[4] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[5] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decamin_7seg_o[6] <= decamin_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[0] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[1] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[2] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[3] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[4] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[5] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+hr_7seg_o[6] <= hr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[0] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[1] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[2] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[3] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[4] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[5] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+decahr_7seg_o[6] <= decahr_7seg_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen
+clk_i => clk_i.IN32
+nreset_i => nreset_i.IN32
+period_i[0] => Equal0.IN31
+period_i[1] => Equal0.IN30
+period_i[2] => Equal0.IN29
+period_i[3] => Equal0.IN28
+period_i[4] => Equal0.IN27
+period_i[5] => Equal0.IN26
+period_i[6] => Equal0.IN25
+period_i[7] => Equal0.IN24
+period_i[8] => Equal0.IN23
+period_i[9] => Equal0.IN22
+period_i[10] => Equal0.IN21
+period_i[11] => Equal0.IN20
+period_i[12] => Equal0.IN19
+period_i[13] => Equal0.IN18
+period_i[14] => Equal0.IN17
+period_i[15] => Equal0.IN16
+period_i[16] => Equal0.IN15
+period_i[17] => Equal0.IN14
+period_i[18] => Equal0.IN13
+period_i[19] => Equal0.IN12
+period_i[20] => Equal0.IN11
+period_i[21] => Equal0.IN10
+period_i[22] => Equal0.IN9
+period_i[23] => Equal0.IN8
+period_i[24] => Equal0.IN7
+period_i[25] => Equal0.IN6
+period_i[26] => Equal0.IN5
+period_i[27] => Equal0.IN4
+period_i[28] => Equal0.IN3
+period_i[29] => Equal0.IN2
+period_i[30] => Equal0.IN1
+period_i[31] => Equal0.IN0
+pulse_o <= pulse_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[0].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[1].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[2].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[3].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[4].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[5].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[6].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[7].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[8].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[9].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[10].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[11].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[12].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[13].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[14].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[15].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[16].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[17].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[18].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[19].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[20].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[21].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[22].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[23].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[24].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[25].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[26].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[27].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[28].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[29].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[30].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGenerator:ClkGen|FFJK:JKFFArrayForPulse[31].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule
+key0_i => key0_i.IN1
+key1_i => key1_i.IN1
+key2_i => key2_i.IN1
+key3_i => key3_i.IN1
+set_switch_i => set_switch_i.IN1
+disp_on_switch_i => disp_on_switch_i.IN1
+clk_i => clk_i.IN7
+nreset_i => nreset_i.IN7
+centisec_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+centisec_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+centisec_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+centisec_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+centisec_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+centisec_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+centisec_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+decisec_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+sec_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+decasec_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+min_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+decamin_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+hr_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[0] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[1] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[2] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[3] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[4] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[5] <= digitdiplmux:OutputManager.segment_out
+decahr_7seg_o[6] <= digitdiplmux:OutputManager.segment_out
+blink_lessthansec_o <= blink_lessthansec_o.DB_MAX_OUTPUT_PORT_TYPE
+blink_sec_o <= blink_sec_o.DB_MAX_OUTPUT_PORT_TYPE
+blink_min_o <= blink_min_o.DB_MAX_OUTPUT_PORT_TYPE
+blink_hr_o <= blink_hr_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ButtonInterpreter:ModeSelectButtonInterpreter
+button_i => state.00.DATAIN
+button_i => state.OUTPUTSELECT
+button_i => state.OUTPUTSELECT
+clk_i => state~2.DATAIN
+nreset_i => state~4.DATAIN
+pressed_o <= pressed_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ThreePhaseModeSelector:DisplayModeManager
+clk_i => state~1.DATAIN
+nreset_i => state~3.DATAIN
+toggle_button_i => next_state.01.OUTPUTSELECT
+toggle_button_i => next_state.10.OUTPUTSELECT
+toggle_button_i => next_state.11.OUTPUTSELECT
+sync_nreset_i => state.OUTPUTSELECT
+sync_nreset_i => state.OUTPUTSELECT
+sync_nreset_i => state.OUTPUTSELECT
+sync_nreset_i => state.00.DATAIN
+initial_mode_o <= initial_mode_o.DB_MAX_OUTPUT_PORT_TYPE
+mode1_o <= mode1_o.DB_MAX_OUTPUT_PORT_TYPE
+mode2_o <= mode2_o.DB_MAX_OUTPUT_PORT_TYPE
+mode3_o <= mode3_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|SwitchesManager:TestManager
+key1_i => key1_i.IN1
+key2_i => key2_i.IN1
+key3_i => key3_i.IN1
+set_switch_i => concat.IN0
+set_switch_i => concat.IN0
+clockmode_i => concat.IN1
+clockmode_i => concat.IN1
+clockmode_i => concat.IN1
+clockmode_i => concat.IN1
+stopwatchmode_i => concat.IN1
+stopwatchmode_i => concat.IN1
+timermode_i => concat.IN1
+timermode_i => concat.IN1
+timermode_i => concat.IN1
+timermode_i => concat.IN1
+clk_i => clk_i.IN3
+nreset_i => nreset_i.IN3
+clock_set_run_switch_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+clock_up_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+clock_down_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+clock_setmode_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+stopwatch_reset_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+stopwatch_runpause_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+timer_set_runorpause_switch_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+timer_up_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+timer_down_reset_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+timer_setmode_runpause_o <= concat.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|SwitchesManager:TestManager|ButtonInterpreter:Key1Interpreter
+button_i => state.00.DATAIN
+button_i => state.OUTPUTSELECT
+button_i => state.OUTPUTSELECT
+clk_i => state~2.DATAIN
+nreset_i => state~4.DATAIN
+pressed_o <= pressed_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|SwitchesManager:TestManager|ButtonInterpreter:Key2Interpreter
+button_i => state.00.DATAIN
+button_i => state.OUTPUTSELECT
+button_i => state.OUTPUTSELECT
+clk_i => state~2.DATAIN
+nreset_i => state~4.DATAIN
+pressed_o <= pressed_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|SwitchesManager:TestManager|ButtonInterpreter:Key3Interpreter
+button_i => state.00.DATAIN
+button_i => state.OUTPUTSELECT
+button_i => state.OUTPUTSELECT
+clk_i => state~2.DATAIN
+nreset_i => state~4.DATAIN
+pressed_o <= pressed_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock
+set_run_switch_i => set_run_switch_i.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+setmode_i => setmode_i.IN1
+blink_sec_o <= ThreePhaseModeSelector:ClockController.mode1_o
+blink_min_o <= ThreePhaseModeSelector:ClockController.mode2_o
+blink_hr_o <= ThreePhaseModeSelector:ClockController.mode3_o
+clk_i => clk_i.IN5
+nreset_i => nreset_i.IN4
+centisec_o[0] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[1] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[2] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[3] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+decisec_o[0] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[1] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[2] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[3] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+sec_o[0] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[1] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[2] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[3] <= DualBCDCounter:SecCounter.ones_count_o
+decasec_o[0] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[1] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[2] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[3] <= DualBCDCounter:SecCounter.tens_count_o
+min_o[0] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[1] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[2] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[3] <= DualBCDCounter:MinCounter.ones_count_o
+decamin_o[0] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[1] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[2] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[3] <= DualBCDCounter:MinCounter.tens_count_o
+hr_o[0] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[1] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[2] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[3] <= DualBCDCounter:HrCounter.ones_count_o
+decahr_o[0] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[1] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[2] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[3] <= DualBCDCounter:HrCounter.tens_count_o
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|ThreePhaseModeSelector:ClockController
+clk_i => state~1.DATAIN
+nreset_i => state~3.DATAIN
+toggle_button_i => next_state.01.OUTPUTSELECT
+toggle_button_i => next_state.10.OUTPUTSELECT
+toggle_button_i => next_state.11.OUTPUTSELECT
+sync_nreset_i => state.OUTPUTSELECT
+sync_nreset_i => state.OUTPUTSELECT
+sync_nreset_i => state.OUTPUTSELECT
+sync_nreset_i => state.00.DATAIN
+initial_mode_o <= initial_mode_o.DB_MAX_OUTPUT_PORT_TYPE
+mode1_o <= mode1_o.DB_MAX_OUTPUT_PORT_TYPE
+mode2_o <= mode2_o.DB_MAX_OUTPUT_PORT_TYPE
+mode3_o <= mode3_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|ClockModule:MainClock|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch
+run_pause_button_i => run_pause_button_i.IN2
+stopwatch_reset_i => comb.IN0
+stopwatch_reset_i => comb.IN0
+stopwatch_reset_i => comb.IN0
+stopwatch_reset_i => comb.IN0
+stopwatch_reset_i => comb.IN0
+clk_i => clk_i.IN5
+nreset_i => comb.IN1
+nreset_i => comb.IN1
+nreset_i => comb.IN1
+nreset_i => comb.IN1
+nreset_i => comb.IN1
+centisec_o[0] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[1] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[2] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[3] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+decisec_o[0] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[1] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[2] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[3] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+sec_o[0] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[1] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[2] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[3] <= DualBCDCounter:SecCounter.ones_count_o
+decasec_o[0] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[1] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[2] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[3] <= DualBCDCounter:SecCounter.tens_count_o
+min_o[0] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[1] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[2] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[3] <= DualBCDCounter:MinCounter.ones_count_o
+decamin_o[0] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[1] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[2] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[3] <= DualBCDCounter:MinCounter.tens_count_o
+hr_o[0] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[1] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[2] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[3] <= DualBCDCounter:HrCounter.ones_count_o
+decahr_o[0] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[1] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[2] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[3] <= DualBCDCounter:HrCounter.tens_count_o
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|FFJK:run_pause_controller
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|StopWatchModule:MainStopWatch|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer
+set_runorpause_switch_i => set_runorpause_switch_i.IN1
+up_i => up_i.IN1
+down_reset_i => down_reset_i.IN1
+setmode_runpause_i => setmode_runpause_i.IN1
+clk_i => clk_i.IN5
+nreset_i => nreset_i.IN1
+blink_lessthansec_o <= TimerController:Controller.end_reached_o
+blink_sec_o <= blink_sec_o.DB_MAX_OUTPUT_PORT_TYPE
+blink_min_o <= blink_min_o.DB_MAX_OUTPUT_PORT_TYPE
+blink_hr_o <= blink_hr_o.DB_MAX_OUTPUT_PORT_TYPE
+centisec_o[0] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[1] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[2] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+centisec_o[3] <= DualBCDCounter:LessThanSecCounter.ones_count_o
+decisec_o[0] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[1] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[2] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+decisec_o[3] <= DualBCDCounter:LessThanSecCounter.tens_count_o
+sec_o[0] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[1] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[2] <= DualBCDCounter:SecCounter.ones_count_o
+sec_o[3] <= DualBCDCounter:SecCounter.ones_count_o
+decasec_o[0] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[1] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[2] <= DualBCDCounter:SecCounter.tens_count_o
+decasec_o[3] <= DualBCDCounter:SecCounter.tens_count_o
+min_o[0] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[1] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[2] <= DualBCDCounter:MinCounter.ones_count_o
+min_o[3] <= DualBCDCounter:MinCounter.ones_count_o
+decamin_o[0] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[1] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[2] <= DualBCDCounter:MinCounter.tens_count_o
+decamin_o[3] <= DualBCDCounter:MinCounter.tens_count_o
+hr_o[0] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[1] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[2] <= DualBCDCounter:HrCounter.ones_count_o
+hr_o[3] <= DualBCDCounter:HrCounter.ones_count_o
+decahr_o[0] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[1] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[2] <= DualBCDCounter:HrCounter.tens_count_o
+decahr_o[3] <= DualBCDCounter:HrCounter.tens_count_o
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|TimerController:Controller
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => Mux0.IN1
+set_runorpause_switch_i => Mux2.IN7
+set_runorpause_switch_i => Mux0.IN2
+set_runorpause_switch_i => Mux0.IN3
+set_runorpause_switch_i => Mux0.IN4
+set_runorpause_switch_i => Mux0.IN5
+set_runorpause_switch_i => Mux0.IN6
+set_runorpause_switch_i => Mux1.IN7
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => Mux0.IN7
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+set_runorpause_switch_i => control_state.OUTPUTSELECT
+up_i => always0.IN0
+up_i => manual_up_o.IN1
+down_reset_i => always0.IN0
+down_reset_i => always0.IN1
+down_reset_i => control_state.OUTPUTSELECT
+down_reset_i => control_state.OUTPUTSELECT
+down_reset_i => manual_down_o.IN1
+setmode_runpause_i => always0.IN1
+setmode_runpause_i => control_state.DATAA
+setmode_runpause_i => control_state.DATAA
+setmode_runpause_i => control_state.DATAA
+setmode_runpause_i => control_state.DATAB
+setmode_runpause_i => control_state.DATAA
+setmode_runpause_i => control_state.DATAA
+setmode_runpause_i => control_state.DATAA
+setmode_runpause_i => control_state.DATAA
+everything_iszero_i => always0.IN1
+everything_iszero_i => control_state.OUTPUTSELECT
+everything_iszero_i => control_state.OUTPUTSELECT
+everything_iszero_i => control_state.DATAB
+everything_iszero_i => control_state.DATAA
+everything_iszero_i => control_state.DATAB
+clk_i => control_state[0].CLK
+clk_i => control_state[1].CLK
+clk_i => control_state[2].CLK
+nreset_i => control_state[0].ACLR
+nreset_i => control_state[1].ACLR
+nreset_i => control_state[2].ACLR
+run_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+manual_up_o <= manual_up_o.DB_MAX_OUTPUT_PORT_TYPE
+manual_down_o <= manual_down_o.DB_MAX_OUTPUT_PORT_TYPE
+notset_any_o <= control_state[2].DB_MAX_OUTPUT_PORT_TYPE
+set_sec_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+set_min_o <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+set_hr_o <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+counters_nreset_o <= counters_nreset_o.DB_MAX_OUTPUT_PORT_TYPE
+end_reached_o <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:LessThanSecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:SecCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:MinCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter
+dd_up_i => dd_up_i.IN1
+dd_down_i => dd_down_i.IN1
+dd_clk_i => dd_clk_i.IN2
+dd_nreset_i => dd_nreset_i.IN2
+tens_limit_i[0] => tens_limit_i[0].IN1
+tens_limit_i[1] => tens_limit_i[1].IN1
+tens_limit_i[2] => tens_limit_i[2].IN1
+tens_limit_i[3] => tens_limit_i[3].IN1
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[0] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[1] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[2] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+ones_limit_i[3] => ones_real_limit.DATAB
+tens_count_o[0] <= Counter4Bit:TensDigit.count_o
+tens_count_o[1] <= Counter4Bit:TensDigit.count_o
+tens_count_o[2] <= Counter4Bit:TensDigit.count_o
+tens_count_o[3] <= Counter4Bit:TensDigit.count_o
+ones_count_o[0] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[1] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[2] <= Counter4Bit:OnesDigit.count_o
+ones_count_o[3] <= Counter4Bit:OnesDigit.count_o
+dd_carryup_o <= dd_carryup_o.DB_MAX_OUTPUT_PORT_TYPE
+dd_carrydown_o <= dd_carrydown_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:OnesDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:TensDigit
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => toggle.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => toggle.IN1
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+up_i => comb.IN0
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => toggle.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+down_i => comb.IN1
+counter_clk_i => counter_clk_i.IN4
+counter_nreset_i => counter_nreset_i.IN4
+limit_i[0] => Equal0.IN3
+limit_i[0] => comb.IN1
+limit_i[0] => comb.IN1
+limit_i[1] => Equal0.IN2
+limit_i[1] => comb.IN1
+limit_i[1] => comb.IN1
+limit_i[2] => Equal0.IN1
+limit_i[2] => comb.IN1
+limit_i[2] => comb.IN1
+limit_i[3] => Equal0.IN0
+limit_i[3] => comb.IN1
+limit_i[3] => comb.IN1
+count_o[0] <= FFJK:JKFFArray[0].JKFFInst.q_o
+count_o[1] <= FFJK:JKFFArray[1].JKFFInst.q_o
+count_o[2] <= FFJK:JKFFArray[2].JKFFInst.q_o
+count_o[3] <= FFJK:JKFFArray[3].JKFFInst.q_o
+islim_o <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+iszero_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[0].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[1].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[2].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|TimerModule:MainTimer|DualBCDCounter:HrCounter|Counter4Bit:TensDigit|FFJK:JKFFArray[3].JKFFInst
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager
+clk => ~NO_FANOUT~
+rstn => ~NO_FANOUT~
+clock_values[0] => selected_values.IN0
+clock_values[1] => selected_values.IN0
+clock_values[2] => selected_values.IN0
+clock_values[3] => selected_values.IN0
+clock_values[4] => selected_values.IN0
+clock_values[5] => selected_values.IN0
+clock_values[6] => selected_values.IN0
+clock_values[7] => selected_values.IN0
+clock_values[8] => selected_values.IN0
+clock_values[9] => selected_values.IN0
+clock_values[10] => selected_values.IN0
+clock_values[11] => selected_values.IN0
+clock_values[12] => selected_values.IN0
+clock_values[13] => selected_values.IN0
+clock_values[14] => selected_values.IN0
+clock_values[15] => selected_values.IN0
+clock_values[16] => selected_values.IN0
+clock_values[17] => selected_values.IN0
+clock_values[18] => selected_values.IN0
+clock_values[19] => selected_values.IN0
+clock_values[20] => selected_values.IN0
+clock_values[21] => selected_values.IN0
+clock_values[22] => selected_values.IN0
+clock_values[23] => selected_values.IN0
+clock_values[24] => selected_values.IN0
+clock_values[25] => selected_values.IN0
+clock_values[26] => selected_values.IN0
+clock_values[27] => selected_values.IN0
+clock_values[28] => selected_values.IN0
+clock_values[29] => selected_values.IN0
+clock_values[30] => selected_values.IN0
+clock_values[31] => selected_values.IN0
+stopwatch_values[0] => selected_values.IN0
+stopwatch_values[1] => selected_values.IN0
+stopwatch_values[2] => selected_values.IN0
+stopwatch_values[3] => selected_values.IN0
+stopwatch_values[4] => selected_values.IN0
+stopwatch_values[5] => selected_values.IN0
+stopwatch_values[6] => selected_values.IN0
+stopwatch_values[7] => selected_values.IN0
+stopwatch_values[8] => selected_values.IN0
+stopwatch_values[9] => selected_values.IN0
+stopwatch_values[10] => selected_values.IN0
+stopwatch_values[11] => selected_values.IN0
+stopwatch_values[12] => selected_values.IN0
+stopwatch_values[13] => selected_values.IN0
+stopwatch_values[14] => selected_values.IN0
+stopwatch_values[15] => selected_values.IN0
+stopwatch_values[16] => selected_values.IN0
+stopwatch_values[17] => selected_values.IN0
+stopwatch_values[18] => selected_values.IN0
+stopwatch_values[19] => selected_values.IN0
+stopwatch_values[20] => selected_values.IN0
+stopwatch_values[21] => selected_values.IN0
+stopwatch_values[22] => selected_values.IN0
+stopwatch_values[23] => selected_values.IN0
+stopwatch_values[24] => selected_values.IN0
+stopwatch_values[25] => selected_values.IN0
+stopwatch_values[26] => selected_values.IN0
+stopwatch_values[27] => selected_values.IN0
+stopwatch_values[28] => selected_values.IN0
+stopwatch_values[29] => selected_values.IN0
+stopwatch_values[30] => selected_values.IN0
+stopwatch_values[31] => selected_values.IN0
+timer_values[0] => selected_values.IN0
+timer_values[1] => selected_values.IN0
+timer_values[2] => selected_values.IN0
+timer_values[3] => selected_values.IN0
+timer_values[4] => selected_values.IN0
+timer_values[5] => selected_values.IN0
+timer_values[6] => selected_values.IN0
+timer_values[7] => selected_values.IN0
+timer_values[8] => selected_values.IN0
+timer_values[9] => selected_values.IN0
+timer_values[10] => selected_values.IN0
+timer_values[11] => selected_values.IN0
+timer_values[12] => selected_values.IN0
+timer_values[13] => selected_values.IN0
+timer_values[14] => selected_values.IN0
+timer_values[15] => selected_values.IN0
+timer_values[16] => selected_values.IN0
+timer_values[17] => selected_values.IN0
+timer_values[18] => selected_values.IN0
+timer_values[19] => selected_values.IN0
+timer_values[20] => selected_values.IN0
+timer_values[21] => selected_values.IN0
+timer_values[22] => selected_values.IN0
+timer_values[23] => selected_values.IN0
+timer_values[24] => selected_values.IN0
+timer_values[25] => selected_values.IN0
+timer_values[26] => selected_values.IN0
+timer_values[27] => selected_values.IN0
+timer_values[28] => selected_values.IN0
+timer_values[29] => selected_values.IN0
+timer_values[30] => selected_values.IN0
+timer_values[31] => selected_values.IN0
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+clockmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+stopwatchmode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+timermode => selected_values.IN1
+segment_out[0] <= seven_seg:s_seg7.seg
+segment_out[1] <= seven_seg:s_seg7.seg
+segment_out[2] <= seven_seg:s_seg7.seg
+segment_out[3] <= seven_seg:s_seg7.seg
+segment_out[4] <= seven_seg:s_seg7.seg
+segment_out[5] <= seven_seg:s_seg7.seg
+segment_out[6] <= seven_seg:s_seg7.seg
+segment_out[7] <= seven_seg:s_seg6.seg
+segment_out[8] <= seven_seg:s_seg6.seg
+segment_out[9] <= seven_seg:s_seg6.seg
+segment_out[10] <= seven_seg:s_seg6.seg
+segment_out[11] <= seven_seg:s_seg6.seg
+segment_out[12] <= seven_seg:s_seg6.seg
+segment_out[13] <= seven_seg:s_seg6.seg
+segment_out[14] <= seven_seg:s_seg5.seg
+segment_out[15] <= seven_seg:s_seg5.seg
+segment_out[16] <= seven_seg:s_seg5.seg
+segment_out[17] <= seven_seg:s_seg5.seg
+segment_out[18] <= seven_seg:s_seg5.seg
+segment_out[19] <= seven_seg:s_seg5.seg
+segment_out[20] <= seven_seg:s_seg5.seg
+segment_out[21] <= seven_seg:s_seg4.seg
+segment_out[22] <= seven_seg:s_seg4.seg
+segment_out[23] <= seven_seg:s_seg4.seg
+segment_out[24] <= seven_seg:s_seg4.seg
+segment_out[25] <= seven_seg:s_seg4.seg
+segment_out[26] <= seven_seg:s_seg4.seg
+segment_out[27] <= seven_seg:s_seg4.seg
+segment_out[28] <= seven_seg:s_seg3.seg
+segment_out[29] <= seven_seg:s_seg3.seg
+segment_out[30] <= seven_seg:s_seg3.seg
+segment_out[31] <= seven_seg:s_seg3.seg
+segment_out[32] <= seven_seg:s_seg3.seg
+segment_out[33] <= seven_seg:s_seg3.seg
+segment_out[34] <= seven_seg:s_seg3.seg
+segment_out[35] <= seven_seg:s_seg2.seg
+segment_out[36] <= seven_seg:s_seg2.seg
+segment_out[37] <= seven_seg:s_seg2.seg
+segment_out[38] <= seven_seg:s_seg2.seg
+segment_out[39] <= seven_seg:s_seg2.seg
+segment_out[40] <= seven_seg:s_seg2.seg
+segment_out[41] <= seven_seg:s_seg2.seg
+segment_out[42] <= seven_seg:s_seg1.seg
+segment_out[43] <= seven_seg:s_seg1.seg
+segment_out[44] <= seven_seg:s_seg1.seg
+segment_out[45] <= seven_seg:s_seg1.seg
+segment_out[46] <= seven_seg:s_seg1.seg
+segment_out[47] <= seven_seg:s_seg1.seg
+segment_out[48] <= seven_seg:s_seg1.seg
+segment_out[49] <= seven_seg:s_seg0.seg
+segment_out[50] <= seven_seg:s_seg0.seg
+segment_out[51] <= seven_seg:s_seg0.seg
+segment_out[52] <= seven_seg:s_seg0.seg
+segment_out[53] <= seven_seg:s_seg0.seg
+segment_out[54] <= seven_seg:s_seg0.seg
+segment_out[55] <= seven_seg:s_seg0.seg
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg0
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg1
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg2
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg3
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg4
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg5
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg6
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|CombinedModule:MainModule|digitdiplmux:OutputManager|seven_seg:s_seg7
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker
+clk_i => clk_i.IN8
+nreset_i => nreset_i.IN8
+period_i[0] => Equal0.IN7
+period_i[1] => Equal0.IN6
+period_i[2] => Equal0.IN5
+period_i[3] => Equal0.IN4
+period_i[4] => Equal0.IN3
+period_i[5] => Equal0.IN2
+period_i[6] => Equal0.IN1
+period_i[7] => Equal0.IN0
+pulse_o <= pulse_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[0].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[1].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[2].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[3].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[4].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[5].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[6].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlteraClock|PulseGeneratorSmall:Blinker|FFJK:JKFFArrayForPulseSmall[7].JKFFInstForPulse
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+nreset_i => q_o~reg0.ACLR
+enable_i => q_o~reg0.CLK
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

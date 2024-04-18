@@ -1,4 +1,4 @@
-`include "AlteraClock/FFJK.v"
+// `include "AlteraClock/FFJK.v"
 
 module PulseGenerator(
     input clk_i,
@@ -34,7 +34,7 @@ module PulseGenerator(
             pulse_o <= ~pulse_o;
     end
 
-endmodule;
+endmodule
 
 
 module PulseGeneratorSmall(
@@ -71,4 +71,4 @@ module PulseGeneratorSmall(
             pulse_o <= ~pulse_o;
     end
 
-endmodule;
+endmodule
