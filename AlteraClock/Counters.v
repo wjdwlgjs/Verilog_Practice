@@ -81,8 +81,10 @@ module Counter4Bit(
     genvar i;
     generate 
         for (i = 0; i < 4; i = i + 1) begin: JKFFArray
+        // This logic was made using a k-map
+        // Next time I think I'll just use a case statement
             assign toggle[i] = (i == 0? 1'b1 : toggle[i-1] & (count_o[i-1] & up_i | ~count_o[i-1] & down_i & ~up_i));
-            FFJK JKFFInst(
+            FFJK JKFFInst( 
                 .j_i(up_i & ~islim_o & toggle[i] | ~up_i & down_i & ~iszero_o & toggle[i] | ~up_i & down_i & ~islim_o & iszero_o & limit_i[i]),
                 .k_i(islim_o & iszero_o | up_i & islim_o | up_i & ~islim_o & toggle[i] | ~up_i & down_i & ~iszero_o & toggle[i] | ~up_i & down_i & ~islim_o & iszero_o & ~limit_i[i]),
                 .nreset_i(counter_nreset_i),
@@ -98,7 +100,7 @@ module DualBCDCounter(
     input dd_down_i, // counts up if both up/down inputs are 1
     input dd_clk_i,
     input dd_nreset_i,
-    input [3:0] tens_limit_i, // if we want this thing to count from 0 to 23, then we input tens_limit_i a 2, and ones_limit_i a 3.
+    input [3:0] tens_limit_i, // if we want this thing to count from 0 to 23, then we input tens_limit_i = 2, and ones_limit_i = 3.
     input [3:0] ones_limit_i, // ones digit will only count up to 9 even if a greater limit is fed into this input
     // Tens digit can count higher than 9, if the given limit is higher than 9. 
     
@@ -115,11 +117,11 @@ module DualBCDCounter(
     always @(*) begin
         if (tens_limit_i == 4'b0000) ones_real_limit <= ones_limit_i;
         else begin
-            if (tens_islim & dd_up_i) // if ten is at limit and we are counting up. i.e. If inteded limit is 24 and we are counting 20, 21, 22...
+            if (tens_islim & dd_up_i) // if ten is at limit and we are counting up. For example, if inteded limit is 24 and we are counting 20, 21, 22...
                 ones_real_limit <= ones_limit_i;
             else if (tens_iszero & ones_iszero & dd_down_i & ~dd_up_i) // if current count is at 00 and we are counting down. 
                 ones_real_limit <= ones_limit_i;
-            else ones_real_limit <= 4'b1001;
+            else ones_real_limit <= 4'b1001; // if not, then ones digit limit is 9
         end
     end
 
