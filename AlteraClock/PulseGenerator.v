@@ -28,6 +28,7 @@ module PulseGenerator(
         end
     endgenerate
 
+    // A simple T-FF    
     always @(negedge limit_reached or negedge nreset_i) begin
         if (~nreset_i) pulse_o <= 0;
         else 
